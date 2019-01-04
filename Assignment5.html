@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Find all even values from [1,2,4,5,11,12,22,23,31] using filter method</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [1,2,4,5,11,12,22,23,31];
+
+function checkEvenNumbers(num) {
+  return num%2 == 0
+}
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = numbers.filter(checkEvenNumbers);
+}
+</script>
+
+</body>
+</html>

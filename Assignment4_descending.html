@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to sort the array in descending order.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var marks = [30, 80, 12, 90, 06, 45, 20, 03, 40, 10];
+document.getElementById("demo").innerHTML = marks;
+
+function myFunction() {
+  marks.sort(function(a, b){return b-a});
+  document.getElementById("demo").innerHTML = marks;
+}
+</script>
+
+</body>
+</html>

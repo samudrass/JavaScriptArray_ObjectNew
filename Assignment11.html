@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>What is use of Random function ===> Return a random number between 0 (inclusive) and 1 (exclusive):<br/>Below code will give random values from 0 to 9;</p>
+
+<button onclick="getRndInteger()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function getRndInteger() {
+  var randomNumber = Math.floor(Math.random() * (10-0)) + 0;
+  document.getElementById("demo").innerHTML = randomNumber;
+}
+</script>
+
+</body>
+</html>

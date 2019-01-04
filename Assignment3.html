@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Output will be as below : - <br/>The reason is : Sort method sorts the values as a string in alphabetical and ascending order. Here we are inputting numbers so it try to sort numbrers as a string and hence e.g. 11 is greater than 2, so it sorted 11 before 2 and so on.</p>
+
+<button onclick="myFunction()">Sort it</button>
+
+<p id="demo"></p>
+
+<script>
+var numbers = [1,2,4,5,11,12,22,23,31];
+
+function myFunction() {
+  numbers.sort();
+  document.getElementById("demo").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>
